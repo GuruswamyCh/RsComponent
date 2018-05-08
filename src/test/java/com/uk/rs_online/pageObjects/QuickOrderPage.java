@@ -14,32 +14,31 @@ JavascriptExecutor js= (JavascriptExecutor)driver;
 	
 	/*@FindBy(xpath="//form[@class='quickOrder']")
 	WebElement QuickOrder;*/
+	
 
 	@FindBy(xpath="//form[@class='quickOrder']/div[2]/input[1]")
-	WebElement StockNo1;
+	WebElement StockNo;
 	
 	@FindBy(xpath="//form[@class='quickOrder']/div[2]/input[2]")
-	WebElement Qty1;
+	WebElement Qty;
 	
-	@FindBy(xpath="//form[@class='quickOrder']/div[4]/input[1]")
+	/*@FindBy(xpath="//form[@class='quickOrder']/div[4]/input[1]")
 	WebElement StockNo2;
 	
 	@FindBy(xpath="//form[@class='quickOrder']/div[4]/input[2]")
-	WebElement Qty2;
+	WebElement Qty2;*/
 	
 	@FindBy(id="quickOrderBtn")
 	WebElement AddToBasket;
-	
 	public QuickOrderPage()
 	{
-	PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver,this);
 	}
-
-	public void QuickOrder(String RsStockNo1, String Quantity1)
+	public void QuickOrder(String RsStockNo, String Quantity1)
 	{
-		js.executeScript("arguments[0].scrollIntoView(true);",StockNo1 );
-		StockNo1.sendKeys(RsStockNo1);
-		Qty1.sendKeys(Quantity1);
+		//js.executeScript("arguments[0].scrollIntoView(true);",StockNo1 );
+		StockNo.sendKeys(RsStockNo);
+		Qty.sendKeys(Quantity1);
 	}
 	
 	public void addtobasket()

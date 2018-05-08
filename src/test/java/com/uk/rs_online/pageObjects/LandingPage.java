@@ -23,7 +23,7 @@ public class LandingPage extends TestBase
 	@FindBy(xpath="//form[@class='quickOrder']")
 	WebElement QuickOrder;
 	
-	@FindBy(xpath="//form[@class='quickOrder']/div[2]/input[1]")
+	/*@FindBy(xpath="//form[@class='quickOrder']/div[2]/input[1]")
 	WebElement StockNo1;
 	
 	@FindBy(xpath="//form[@class='quickOrder']/div[2]/input[2]")
@@ -34,9 +34,9 @@ public class LandingPage extends TestBase
 	
 	@FindBy(xpath="//form[@class='quickOrder']/div[4]/input[2]")
 	WebElement Qty2;
-	
-	@FindBy(id="quickOrderBtn")
-	WebElement AddToBasket;
+	*/
+	/*@FindBy(id="quickOrderBtn")
+	WebElement AddToBasket;*/
 	
 	public LandingPage()
 	{

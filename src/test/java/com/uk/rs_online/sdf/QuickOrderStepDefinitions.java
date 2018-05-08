@@ -16,7 +16,7 @@ public class QuickOrderStepDefinitions extends TestBase
 	@When("^the user enters the RsStockId in the RsStockNo quantity in the Quantity_Box$")
 	public void the_user_enters_the_RsStockId_in_the_RsStockNo_quantity_in_the_Quantity_Box() throws Throwable {
 		quickorderpage = new QuickOrderPage();
-		quickorderpage.QuickOrder(prop.getProperty("RsStockNo1"),prop.getProperty("Quantity1"));
+		quickorderpage.QuickOrder(prop.getProperty("RsStockNo"),prop.getProperty("Quantity1"));
 	}
 
 	@When("^clicks on the AddtoBasket button$")
